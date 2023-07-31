@@ -1,0 +1,35 @@
+{
+  "name": "com.postert.projnetforgeoapiforunity",
+  "version": "1.0.0",
+  "displayName": "ProjNet4GeoAPI-For-Unity",
+  "description": "The ProjNet4GeoAPI-For-Unity library is based on the ProjNet4GeoAPI which is an extended port of ProjNet. It allows processing geo-coordinates in Unity.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://github.com/Postert/ProjNet4GeoAPI-For-Unity",
+  "licensesUrl": "https://github.com/Postert/ProjNet4GeoAPI-For-Unity/blob/main/LICENSE",
+  "keywords": [
+     "geocoordinates",
+     "geo-coordinates",
+     "Unity",
+     "Unity3D",
+     "Geographic coordinates",
+     "GPS coordinates",
+     "Geographic coordinate system",
+     "latitude",
+     "longitude",
+     "UTM coordinates",
+     "Universal Transverse Mercator coordinate system",
+     "UTM coordinate system",
+     "ETRS89/UTM coordinate system"
+   ],
+   "author": {
+     "name": "Patrick Postert"
+   },
+   "samples": [
+    {
+        "displayName": "CoordinateTransformer",
+        "description": "Contains a sample scene for immediate testing.",
+        "path": "Sample~"
+    }
+  ]
+}
