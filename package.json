@@ -1,6 +1,6 @@
 {
   "name": "com.postert.projnetforgeoapiforunity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "ProjNet4GeoAPI-For-Unity",
   "description": "The ProjNet4GeoAPI-For-Unity library is based on the ProjNet4GeoAPI which is an extended port of ProjNet. It allows processing geo-coordinates in Unity.",
   "unity": "2019.1",
