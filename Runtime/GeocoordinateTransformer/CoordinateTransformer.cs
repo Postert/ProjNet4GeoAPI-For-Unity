@@ -12,6 +12,9 @@ namespace GeocoordinateTransformer
     /// </summary>
     public class CoordinateTransformer : MonoBehaviour
     {
+
+        public static CoordinateTransformer instance;
+
         /// <summary>
         /// Contains the WGS84/UTM coordinate reference system of the <see cref="UTMCoordinates"/>.
         /// </summary>
@@ -228,22 +231,14 @@ namespace GeocoordinateTransformer
 
         private void Awake()
         {
-            // If Instance is not null (any time after the first time)
-            // AND
-            // If Instance is not 'this' (after the first time)
-            if (Instance != null && Instance != this)
+            if (instance == null)
             {
-                // ...then destroy the game object this script component is attached to.
-                Destroy(gameObject);
-                Debug.LogWarningFormat("Only one CoordinateTransformer can exist.");
+                instance = this;
+                Debug.LogFormat("New CoordinateTransformer created with {0}", this.ToString());
             }
-            else
+            else if (instance != this)
             {
-                // Tell Unity not to destory the GameObject this
-                //  is attached to between scenes.
-                DontDestroyOnLoad(gameObject);
-                // Save an internal reference to the first instance of this class
-                Instance = this;
+                Destroy(gameObject);
             }
         }
     }
