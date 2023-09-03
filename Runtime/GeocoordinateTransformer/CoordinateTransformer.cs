@@ -12,9 +12,6 @@ namespace GeocoordinateTransformer
     /// </summary>
     public class CoordinateTransformer : MonoBehaviour
     {
-
-        public static CoordinateTransformer instance;
-
         /// <summary>
         /// Contains the WGS84/UTM coordinate reference system of the <see cref="UTMCoordinates"/>.
         /// </summary>
@@ -227,7 +224,7 @@ namespace GeocoordinateTransformer
         /// <summary>
         /// Unity CoordinateTransformer Singleton instance.
         /// </summary>
-        public static CoordinateTransformer Instance;
+        public static CoordinateTransformer instance;
 
         private void Awake()
         {
